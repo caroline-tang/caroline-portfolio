@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brand P3 · Lanczos vs Real-ESRGAN 对比</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    body { margin: 0; padding: 24px; background: #f4f4f5; color: #18181b; }
+    h1 { font-size: 1.25rem; margin: 0 0 8px; }
+    .lead { color: #52525b; margin: 0 0 24px; max-width: 720px; line-height: 1.5; }
+    .block { margin-bottom: 32px; background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .block h2 { font-size: 1rem; margin: 0 0 12px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .cell img { width: 100%; height: auto; border-radius: 8px; border: 1px solid #e4e4e7; display: block; }
+    .label { font-size: 12px; font-weight: 600; color: #71717a; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .zoom { margin-top: 12px; }
+    @media (max-width: 800px) { .row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>开封三附小 · 放大方式对比</h1>
+  <p class="lead">
+    左：<strong>Lanczos 等比放大</strong>（设计 100% 原像素，清晰度有限）<br />
+    右：<strong>Real-ESRGAN x4plus</strong>（AI 超分，构图不变，纹理会被推断补全）<br />
+    下方为同区域 200% 局部放大，便于看细节差异。
+  </p>
+
+  <div id="gallery"></div>
+
+  <script>
+    const items = [
+      { id: "01", title: "Logo" },
+      { id: "02", title: "成长树文化墙" },
+      { id: "03", title: "美德文化墙" },
+      { id: "04", title: "Polo 校服" },
+      { id: "05", title: "教室" },
+      { id: "06", title: "入口形象墙" },
+      { id: "07", title: "户外课堂" },
+    ];
+    const root = document.getElementById("gallery");
+    for (const { id, title } of items) {
+      const lanczos = `images/brand-p3-${id}.jpg`;
+      const esrgan = `images/brand-p3-esrgan-preview/brand-p3-${id}-esrgan.jpg`;
+      const block = document.createElement("section");
+      block.className = "block";
+      block.innerHTML = `
+        <h2>${id} · ${title}</h2>
+        <div class="row">
+          <div class="cell">
+            <div class="label">Lanczos（当前网站）</div>
+            <img src="${lanczos}" alt="Lanczos ${id}" loading="lazy" />
+          </div>
+          <div class="cell">
+            <div class="label">Real-ESRGAN x4plus</div>
+            <img src="${esrgan}" alt="ESRGAN ${id}" loading="lazy" />
+          </div>
+        </div>
+        <div class="zoom row">
+          <div class="cell">
+            <div class="label">Lanczos 局部 200%</div>
+            <canvas data-src="${lanczos}" width="600" height="400"></canvas>
+          </div>
+          <div class="cell">
+            <div class="label">ESRGAN 局部 200%</div>
+            <canvas data-src="${esrgan}" width="600" height="400"></canvas>
+          </div>
+        </div>
+      `;
+      root.appendChild(block);
+    }
+    for (const canvas of document.querySelectorAll("canvas[data-src]")) {
+      const img = new Image();
+      img.onload = () => {
+        const ctx = canvas.getContext("2d");
+        const sw = img.width * 0.35;
+        const sh = img.height * 0.35;
+        const sx = (img.width - sw) / 2;
+        const sy = (img.height - sh) / 2;
+        ctx.imageSmoothingEnabled = false;
+        ctx.drawImage(img, sx, sy, sw, sh, 0, 0, canvas.width, canvas.height);
+      };
+      img.src = canvas.dataset.src;
+    }
+  </script>
+</body>
+</html>

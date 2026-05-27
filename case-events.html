@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html
+  lang="zh-CN"
+  data-theme="editorial"
+  data-title-zh="会展与活动主视觉 · 红英"
+  data-title-en="Events & campaign KV · Caroline"
+>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>会展与活动主视觉 · 红英</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+SC:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!--
+    图片：放进 个人网站/images/，命名为 event-01.jpg、event-02.jpg … event-06.jpg
+    多一张：复制整段 <figure class="case-gallery-item case-gallery-item--stacked">…</figure>，
+    改 src，并在 i18n.js 的 zh/en 里各加一条 case_events_c07。
+    说明文字：只改 i18n.js 里 case_events_c01 … c06，不必写「项目一 / 项目二」。
+  -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html"><span data-i18n="logo">Portfolio</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html#work" data-i18n="nav_work">作品</a>
+        <a href="index.html#about" data-i18n="nav_about">关于</a>
+        <a href="index.html#contact" data-i18n="nav_contact">联系</a>
+      </nav>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="pill" data-lang-toggle data-lang-target="zh" aria-pressed="true">中</button>
+          <button type="button" class="pill" data-lang-toggle data-lang-target="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="theme-cycle" id="theme-cycle" aria-label="Cycle visual theme">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span id="theme-cycle-label">Editorial</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="case-main">
+    <article class="case-article">
+      <div class="wrap wrap--prose">
+        <a class="case-back" href="index.html#work" data-i18n="case_back">返回首页</a>
+        <p class="case-kicker">Case 05 · Events</p>
+        <h1 class="case-h1 case-h1--tight" data-i18n="case_events_h1">会展与活动主视觉</h1>
+        <p class="case-page-lead" data-i18n="case_events_intro">
+          不同客户与场合的展板、背景板、签到墙与活动主视觉；每项为独立交付，各归档一张代表图。
+        </p>
+      </div>
+
+      <section class="case-block">
+        <div class="case-bleed">
+          <div class="case-gallery case-gallery--pairs case-gallery--events">
+            <figure class="case-gallery-item case-gallery-item--stacked">
+              <img src="images/event-01.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+              <figcaption data-i18n="case_events_c01">2015 · 渣打上海分行年会 · 舞台主背景板</figcaption>
+            </figure>
+            <figure class="case-gallery-item case-gallery-item--stacked">
+              <img src="images/event-02.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+              <figcaption data-i18n="case_events_c02">2014 · 夏季达沃斯 · 财新夜话论坛 KV</figcaption>
+            </figure>
+            <figure class="case-gallery-item case-gallery-item--stacked">
+              <img src="images/event-03.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+              <figcaption data-i18n="case_events_c03">2014 · 中国金融发展论坛（杭州）· 会场背景板</figcaption>
+            </figure>
+            <figure class="case-gallery-item case-gallery-item--stacked">
+              <img src="images/event-04.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+              <figcaption data-i18n="case_events_c04">北京 · 公平竞争政策宣传周 · 地铁公开展示海报</figcaption>
+            </figure>
+            <figure class="case-gallery-item case-gallery-item--stacked">
+              <img src="images/event-05.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+              <figcaption data-i18n="case_events_c05">2014 · 北京华尔道夫胡同 · 开业典礼主视觉</figcaption>
+            </figure>
+            <figure class="case-gallery-item case-gallery-item--stacked">
+              <img src="images/event-06.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+              <figcaption data-i18n="case_events_c06">2014–2015 · 企业年会 / 论坛 / 活动 · 主视觉合集</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_events_role">主视觉概念、版式与延展、印艺/搭建尺寸适配、现场物料统筹示意。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_events_scope">背景板、展板、签到处、道旗 / 易拉宝等线下活动视觉（按项目单项交付）。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_events_outcome">支撑活动现场品牌统一与信息层级，便于搭建与印刷落地。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> <span class="footer-name" data-i18n="site_name">红英</span> · <span data-i18n="footer_note"></span></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

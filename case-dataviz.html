@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html
+  lang="zh-CN"
+  data-theme="editorial"
+  data-title-zh="数据可视化案例 · 红英"
+  data-title-en="Data visualization · Caroline"
+>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>数据可视化案例 · 红英</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+SC:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!--
+    图片放在 个人网站/images/。项目一 data-p1-01.jpg 起；首页横图 data-case-cover.jpg
+    多一张：复制整段 <figure class="case-gallery-item">…</figure> 并改 src；每张图须单独闭合 </figure>。
+  -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html"><span data-i18n="logo">Portfolio</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html#work" data-i18n="nav_work">作品</a>
+        <a href="index.html#about" data-i18n="nav_about">关于</a>
+        <a href="index.html#contact" data-i18n="nav_contact">联系</a>
+      </nav>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="pill" data-lang-toggle data-lang-target="zh" aria-pressed="true">中</button>
+          <button type="button" class="pill" data-lang-toggle data-lang-target="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="theme-cycle" id="theme-cycle" aria-label="Cycle visual theme">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span id="theme-cycle-label">Editorial</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="case-main">
+    <article class="case-article">
+      <div class="wrap wrap--prose">
+        <a class="case-back" href="index.html#work" data-i18n="case_back">返回首页</a>
+        <p class="case-kicker">Case 04 · Data viz</p>
+        <h1 class="case-h1 case-h1--tight" data-i18n="case_viz_h1">数据可视化案例</h1>
+        <p class="case-page-lead" data-i18n="case_viz_intro">
+          近年政企与 ToB 体验类可视化，客户主要为华为；下图均为概念重构示意，非客户交付物。
+        </p>
+        <p class="case-page-lead case-page-lead--muted" data-i18n="case_viz_disclaimer">
+          受保密协议约束：不含真实客户名称、地域、指标与未公开方案。不构成法律意见。
+        </p>
+
+      </div>
+
+      <section id="data-p1" class="case-block">
+        <div class="case-bleed">
+          <div class="case-gallery case-gallery--pairs">
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-01.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-02.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-03.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-04.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-05.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-06.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-07.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-08.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-09.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-10.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-11.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-12.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-13.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-14.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-15.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-16.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-17.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-18.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-19.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/data-p1-20.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_viz_p1_role">信息分层、版式与视觉规范、图表与指标呈现、方案叙事结构。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_viz_p1_scope">架构信息图、ToB 方案页、数据分析 Dashboard 及大屏类界面。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_viz_p1_outcome">支撑方案评审与运营分析场景下的跨角色沟通，降低理解成本。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <div class="wrap wrap--prose">
+        <p class="case-note" data-i18n="case_viz_note">
+          图示为概念重构，版式与真实交付物已做区分。若需了解完整能力，欢迎邮件预约沟通。
+        </p>
+      </div>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> <span class="footer-name" data-i18n="site_name">红英</span> · <span data-i18n="footer_note"></span></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

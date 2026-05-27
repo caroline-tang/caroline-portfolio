@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html
+  lang="zh-CN"
+  data-theme="editorial"
+  data-title-zh="品牌案例 · 红英"
+  data-title-en="Brand case · Caroline"
+>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>品牌案例 · 红英</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+SC:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!--
+    图片怎么加、怎么删：把 JPG 放进 个人网站/images/。项目一 brand-p1-01.jpg 起；项目二 brand-p2-01…；项目三 brand-p3-01…；项目四 brand-p4-01…
+    多一张：复制从 <figure class="case-gallery-item"> 到 </figure> 的整段（含闭合标签），再改 src；漏写 </figure> 会导致两张图粘在一起、排版错乱。
+    多加一个整项目：复制整段 <section class="case-block">…</section>，改 id 与图名，并在 i18n.js 的 zh/en 各加一套标题与职责等 key。
+  -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html"><span data-i18n="logo">Portfolio</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html#work" data-i18n="nav_work">作品</a>
+        <a href="index.html#about" data-i18n="nav_about">关于</a>
+        <a href="index.html#contact" data-i18n="nav_contact">联系</a>
+      </nav>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="pill" data-lang-toggle data-lang-target="zh" aria-pressed="true">中</button>
+          <button type="button" class="pill" data-lang-toggle data-lang-target="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="theme-cycle" id="theme-cycle" aria-label="Cycle visual theme">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span id="theme-cycle-label">Editorial</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="case-main">
+    <article class="case-article">
+      <div class="wrap wrap--prose">
+        <a class="case-back" href="index.html#work" data-i18n="case_back">返回首页</a>
+        <h1 class="case-h1 case-h1--tight" data-i18n="case_brand_h1">品牌视觉案例</h1>
+        <p class="case-page-lead" data-i18n="case_brand_intro">
+          涵盖幼儿园与中小学环境应用、高校研究院 VIS 手册及园所基础识别系统，从标志规范到空间与物料延展。
+        </p>
+
+        <nav class="case-jump" aria-label="本页案例">
+          <span class="case-jump-label" data-i18n="case_brand_toc">跳转：</span>
+          <a href="#brand-p1" data-i18n="case_brand_p1_nav">项目一</a>
+          <a href="#brand-p2" data-i18n="case_brand_p2_nav">项目二</a>
+          <a href="#brand-p3" data-i18n="case_brand_p3_nav">项目三</a>
+          <a href="#brand-p4" data-i18n="case_brand_p4_nav">项目四</a>
+        </nav>
+      </div>
+
+      <section id="brand-p1" class="case-block">
+        <div class="wrap wrap--prose">
+          <h2 class="case-block-title" data-i18n="case_brand_p1_h2">项目一 · 北京师范大学实验幼儿园</h2>
+          <p class="case-block-lead" data-i18n="case_brand_p1_lead">
+            为园所梳理大堂形象墙与毕业物料等环境应用，统一「百年名园」品牌识别，服务家长接待与日常展示。
+          </p>
+        </div>
+        <div class="case-bleed">
+          <div class="case-gallery">
+            <figure class="case-gallery-item">
+              <img src="images/brand-p1-01.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p1-02.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p1-03.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p1-04.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p1-05.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p1-06.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p1-07.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p1-08.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_brand_p1_role">
+                环境图形与品牌主视觉、子品牌「大手小手俱乐部」识别，以及宣传、纪念出版物与毕业物料设计。
+              </dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_brand_p1_scope">
+                大堂形象墙与服务台示意、名片、走廊展板、招生折页、教师丛书封面、纪念画册与毕业证书夹等。
+              </dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_brand_p1_outcome">
+                形成园所对外统一识别与家长触点物料体系，支撑接待展示、招生说明与毕业典礼等场景落地。
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="brand-p2" class="case-block">
+        <div class="wrap wrap--prose">
+          <h2 class="case-block-title" data-i18n="case_brand_p2_h2">项目二 · 北师大国际与比较教育研究院 VIS</h2>
+          <p class="case-block-lead" data-i18n="case_brand_p2_lead">
+            基于 IICE 四色书脊标识，建立视觉识别系统：标志、色彩、字体与办公及会议物料延展。
+          </p>
+        </div>
+        <div class="case-bleed">
+          <div class="case-gallery">
+            <figure class="case-gallery-item">
+              <img src="images/brand-p2-01.jpg" alt="IICE VIS 封面" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p2-02.jpg" alt="IICE 标志规范" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p2-03.jpg" alt="IICE 色彩规范" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p2-04.jpg" alt="IICE 字体规范" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p2-05.jpg" alt="IICE 办公物料" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p2-06.jpg" alt="IICE 延展应用" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_brand_p2_role">标志梳理与规范、色彩与字体体系、VIS 手册结构、物料 mockup 设计。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_brand_p2_scope">
+                VIS 封面、标志/色彩/字体规范页、名片信封信封文件夹、演示模板与会议背景等延展示意。
+              </dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_brand_p2_outcome">形成可交付的 VIS 手册版式与延展样机，便于院内统一对外形象。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="brand-p3" class="case-block">
+        <div class="wrap wrap--prose">
+          <h2 class="case-block-title" data-i18n="case_brand_p3_h2">项目三 · 开封市第三师范附属小学</h2>
+          <p class="case-block-lead" data-i18n="case_brand_p3_lead">
+            Logo、文化墙与校园空间一体化视觉；以「成长树」与绿白主色贯穿环境与应用。
+          </p>
+        </div>
+        <div class="case-bleed">
+          <div class="case-gallery">
+            <figure class="case-gallery-item">
+              <img src="images/brand-p3-01.jpg" alt="三师附小 Logo" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p3-02.jpg" alt="成长树文化墙" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p3-03.jpg" alt="美德文化墙" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p3-04.jpg" alt="校园户外课堂" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p3-05.jpg" alt="教室内景" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p3-06.jpg" alt="入口形象墙" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_brand_p3_role">标志设计、文化墙与导视、室内色彩与家具方案配合。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_brand_p3_scope">
+                Logo、成长树/美德文化墙、入口形象墙、教室与户外课堂（原稿）。
+              </dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_brand_p3_outcome">形成可落地的校园品牌视觉体系，支撑日常教学与对外展示场景。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="brand-p4" class="case-block">
+        <div class="wrap wrap--prose">
+          <h2 class="case-block-title" data-i18n="case_brand_p4_h2">项目四 · 沈阳国奥幼儿园 VIS</h2>
+          <p class="case-block-lead" data-i18n="case_brand_p4_lead">
+            以绿橙主色与圆形螺旋标志为核心，建立幼儿园视觉识别系统：标志、色彩、字体与办公及延展物料规范。
+          </p>
+        </div>
+        <div class="case-bleed">
+          <div class="case-gallery">
+            <figure class="case-gallery-item">
+              <img src="images/brand-p4-01.jpg" alt="VIS 封面" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p4-02.jpg" alt="标志及创意说明" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p4-03.jpg" alt="色彩规范" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p4-04.jpg" alt="字体规范" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p4-05.jpg" alt="办公物料" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/brand-p4-06.jpg" alt="延展应用" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_brand_p4_role">标志梳理与规范、色彩与字体体系、VIS 手册结构、物料 mockup 设计。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_brand_p4_scope">
+                VIS 封面、标志/色彩/字体规范页、名片信封信封文件夹、演示模板与活动背景等延展示意。
+              </dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_brand_p4_outcome">形成可交付的 VIS 手册版式与延展样机，便于园所统一对外形象。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> <span class="footer-name" data-i18n="site_name">红英</span> · <span data-i18n="footer_note"></span></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

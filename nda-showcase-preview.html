@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>保密项目展示方案对比</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .nda-preview { padding: clamp(24px, 5vw, 48px) 0 64px; }
+    .nda-preview h1 { font-family: var(--font-display); font-size: clamp(1.25rem, 3vw, 1.75rem); margin: 0 0 8px; }
+    .nda-preview .lead { color: var(--muted); margin: 0 0 32px; max-width: 52em; line-height: 1.65; font-size: 15px; }
+    .nda-grid { display: grid; gap: clamp(20px, 4vw, 36px); }
+    @media (min-width: 900px) { .nda-grid { grid-template-columns: 1fr 1fr; } }
+    .nda-card { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+    .nda-card--site { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 12%, transparent); }
+    .nda-card-head { padding: 16px 18px; border-bottom: 1px solid var(--border); }
+    .nda-card-head h2 { margin: 0 0 6px; font-size: 1.05rem; font-family: var(--font-display); }
+    .nda-card-head p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .nda-card-head .tag { display: inline-block; margin-top: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+    .nda-card-head .tag--site { color: var(--text); background: color-mix(in srgb, var(--accent) 18%, var(--surface)); padding: 2px 8px; border-radius: 4px; }
+    .nda-card img { width: 100%; height: auto; display: block; }
+    .nda-note { margin-top: 28px; padding: 16px 18px; border-radius: var(--radius); border: 1px solid var(--border); background: color-mix(in srgb, var(--accent) 6%, var(--surface)); font-size: 14px; color: var(--muted); line-height: 1.65; }
+    .nda-back { display: inline-block; margin-bottom: 20px; font-size: 14px; color: var(--accent); }
+  </style>
+</head>
+<body data-theme="editorial">
+  <div class="grain" aria-hidden="true"></div>
+  <main class="nda-preview">
+    <div class="wrap">
+      <a class="nda-back" href="index.html">← 返回首页</a>
+      <h1>保密项目 · 展示方案对比</h1>
+      <p class="lead">
+        <strong>网站请用 C-公开版</strong>（下方带「推荐挂网」标签）：在保持精致度的同时改动版式锚点，降低与真实交付物的重合度。
+        A/B 脱敏版结构仍接近原稿，适合面试小范围讲解。高重合的 C-v2 已备份为 <code>*-v2-backup.jpg</code>，不建议长期公开。
+      </p>
+      <div class="nda-grid">
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>健康平台 · C-公开版</h2>
+            <p>横向五层架构 + 左 2×2 战略卡 + 右 3 成效卡；深青金配色，非漏斗原稿。</p>
+            <span class="tag tag--site">推荐挂网 · C-fictional.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-health-public.jpg" alt="健康平台 C 公开版" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>网络体验 · C-公开版</h2>
+            <p>上标题 + 左抽象拓扑 / 右价值指标 + 底场景条；无实拍机架与三栏原厂式。</p>
+            <span class="tag tag--site">推荐挂网 · C-network-fictional.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-network-public.jpg" alt="网络 C 公开版" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>体验看板 · C-公开版</h2>
+            <p>浅色细侧栏小图标；顶栏紧凑 KPI；地图居中加大留白；左条图右三小图。</p>
+            <span class="tag tag--site">推荐挂网 · C-nnps-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-nnps-public.jpg" alt="看板 C 公开版" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>健康平台 · A（脱敏）</h2>
+            <p>版式仍接近原稿；仅改文案与地名。面试可用，公开站慎用。</p>
+          </div>
+          <img src="images/nda-showcase/A-abstract.jpg" alt="健康 A 脱敏" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>网络 · B（脱敏）</h2>
+            <p>左挑战 / 中拓扑 / 右价值，去厂商型号。</p>
+          </div>
+          <img src="images/nda-showcase/B-network-abstract.jpg" alt="网络 B 脱敏" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>体验看板 · A（脱敏）</h2>
+            <p>保留 Dashboard 骨架；城市与地图脱敏。</p>
+          </div>
+          <img src="images/nda-showcase/A-nnps-abstract.jpg" alt="看板 A 脱敏" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>模块化 DC · AC 折中版（推荐挂网）</h2>
+            <p>贴近 A 版式与 3D 质感；仅改标题为「虚构案例」、虚构 KPI、页脚声明，比纯 A 略稳。</p>
+            <span class="tag tag--site">推荐挂网 · data-p1-04.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-dc-module-web.jpg" alt="模块化 DC AC 折中版" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>模块化 DC · C-公开版</h2>
+            <p>绿色边缘数据中心；KPI 条 + 模块剖面 + 2×2 能力卡。</p>
+          </div>
+          <img src="images/nda-showcase/C-dc-module-public.jpg" alt="模块化 DC C 公开版" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>模块化 DC · A（脱敏）</h2>
+            <p>保留三栏 + 底部产品示意；去厂商型号，指标泛化。</p>
+          </div>
+          <img src="images/nda-showcase/A-dc-module-abstract.jpg" alt="模块化 DC A 脱敏" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>模块化 DC · B（脱敏）</h2>
+            <p>同版式；指标改为「显著优化」，型号改为通用称谓。</p>
+          </div>
+          <img src="images/nda-showcase/B-dc-module-abstract.jpg" alt="模块化 DC B 脱敏" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>天线姿态 · AC-v2（推荐挂网）</h2>
+            <p>贴近原稿 3D FUI；中文字段 + 虚构案例页脚，横版 1536×1024。</p>
+            <span class="tag tag--site">data-p1-05.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-antenna-web-v2.jpg" alt="天线 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>天线姿态 · C-公开版</h2>
+            <p>仪表盘 + 覆盖扇区示意；版式与原稿区分，横版 1536×1024。</p>
+            <span class="tag tag--site">data-p1-06.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-antenna-public.jpg" alt="天线 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>全场景光伏 · AC-v2</h2>
+            <p>三曲屏+底座；已二次脱敏：无AFCI/具体电压时效、无18%与产品型号名。</p>
+            <span class="tag tag--site">data-p1-07.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-solar-web-v2.jpg" alt="光伏 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>绿色能源供电 · C-公开版</h2>
+            <p>KPI 条 + 四步流程 + 2×2 能力卡；版式与原稿明显不同。</p>
+            <span class="tag tag--site">data-p1-08.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-solar-public.jpg" alt="光伏 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>开放算力生态 · AC-v2</h2>
+            <p>保留左趋势图+中生态栈+右案例三栏；去鲲鹏/客户真名，虚构案例标注。</p>
+            <span class="tag tag--site">data-p1-09.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-kunpeng-web-v2.jpg" alt="算力生态 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>开放算力生态 · C-公开版</h2>
+            <p>KPI 条 + 四层流程 + 模块化算力栈 + 2×2 案例卡；版式与原稿明显不同。</p>
+            <span class="tag">data-p1-10.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-kunpeng-public.jpg" alt="算力生态 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>智能无线网络 · AC-v2</h2>
+            <p>保留左架构图+右全球部署地图；去 IntelligentRAN/运营商真名。</p>
+            <span class="tag tag--site">data-p1-11.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-intelligent-ran-web-v2.jpg" alt="智能RAN AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>智能无线网络 · C-公开版</h2>
+            <p>KPI + 四层栈 + 区域热力 + 底部能力条；版式与原稿明显不同。</p>
+            <span class="tag">data-p1-12.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-intelligent-ran-public.jpg" alt="智能RAN C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>高校数智化愿景 · AC-v2</h2>
+            <p>保留三层蓝图质感；双环HI/AI、六边形中台、管线底座；介于原版与C之间。</p>
+            <span class="tag tag--site">data-p1-13.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-university-digital-web-v2.jpg" alt="高校数智 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>University Digital Vision · AC-v2 (EN)</h2>
+            <p>中文版 AC-v2 英文对照；三层蓝图 + HI/AI 双环版式一致。</p>
+            <span class="tag">AC-university-digital-web-v2-en.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-university-digital-web-v2-en.jpg" alt="University digital vision English" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>高校数智化愿景 · C-公开版</h2>
+            <p>KPI + 三栏平台卡 + 校区示意；版式与原稿明显不同。</p>
+            <span class="tag">data-p1-14.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-university-digital-public.jpg" alt="高校数智 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>全频段融合 · AC-v2</h2>
+            <p>四角+中心六边形；去 GigaBand；高频/中频/低频示意，介于原版与C之间。</p>
+            <span class="tag tag--site">data-p1-15.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-gigaband-web-v2.jpg" alt="全频段 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>全频段融合 · C-公开版</h2>
+            <p>KPI + 三步流程 + 频谱图 + 场景四格；版式与原稿明显不同。</p>
+            <span class="tag">data-p1-16.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-gigaband-public.jpg" alt="全频段 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>智慧站点 · AC-v2</h2>
+            <p>左剖面示意+右横向1+3与方格参数阵；无金色1/3/N与立杆3D，差异更大。</p>
+            <span class="tag tag--site">data-p1-17.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-ambient-site-web-v2.jpg" alt="站点 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>站点数字孪生 · C-公开版</h2>
+            <p>KPI + 架构条 + 示意站型 + 参数矩阵；版式与原稿明显不同。</p>
+            <span class="tag">data-p1-18.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-ambient-site-public.jpg" alt="站点 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>双区域四中心 · AC-v2</h2>
+            <p>六边形中枢+双椭圆环；区域A/B分色；斜角信息卡，规模档替代实景数。</p>
+            <span class="tag tag--site">data-p1-19.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-dc-arch-web-v2.jpg" alt="四中心 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>双区域数据中心 · C-公开版</h2>
+            <p>KPI + 双机房主视觉 + 2×2 能力卡；留白更足、版式更干净。</p>
+            <span class="tag">data-p1-20.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-dc-arch-public.jpg" alt="四中心 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>智能算力一体机 · AC-v2</h2>
+            <p>保留左栈+右双栏精致度；去除品牌/模型名/精确指标；算子库仅「持续增长」。</p>
+            <span class="tag tag--site">AC-ai-appliance-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-ai-appliance-web-v2.jpg" alt="AI一体机 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>Intelligent Computing Appliance · AC-v2 (EN)</h2>
+            <p>中文版 AC-v2 的英文对照；版式与脱敏规则一致。</p>
+            <span class="tag">AC-ai-appliance-web-v2-en.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-ai-appliance-web-v2-en.jpg" alt="AI appliance AC-v2 English" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>智能算力一体机 · C-公开版</h2>
+            <p>KPI 四卡 + 01–04 流程 + 三层栈 + 2×2 能力卡；版式与原版明显区分。</p>
+            <span class="tag tag--site">推荐挂网 · C-ai-appliance-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-ai-appliance-public.jpg" alt="AI一体机 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>普惠互联 · AC-v2</h2>
+            <p>保留中拓扑+左右栏；去除 iFTTO/世行/70%/50%/100%/40km 等精确指标。</p>
+            <span class="tag tag--site">AC-inclusive-connectivity-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-inclusive-connectivity-web-v2.jpg" alt="普惠互联 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>普惠互联 · C-公开版</h2>
+            <p>KPI 四卡 + 01–04 流程 + 区域示意 + 2×2 价值卡；版式与原版明显区分。</p>
+            <span class="tag tag--site">推荐挂网 · C-inclusive-connectivity-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-inclusive-connectivity-public.jpg" alt="普惠互联 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>全光算力网络 · AC-v2</h2>
+            <p>保留双栏地图+行业案例；去除运营商/城市/客户名与精确时延、节点数。</p>
+            <span class="tag tag--site">AC-all-optical-city-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-all-optical-city-web-v2.jpg" alt="全光城 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>Regional All-Optical Network · AC-v2 (EN)</h2>
+            <p>中文版 AC-v2 英文对照；双栏时延圈+网络拓扑版式一致。</p>
+            <span class="tag">AC-all-optical-city-web-v2-en.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-all-optical-city-web-v2-en.jpg" alt="All-optical city AC-v2 English" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>全光算力网络 · C-公开版</h2>
+            <p>KPI 四卡 + 01–04 流程 + 抽象时延圈 + 2×2 价值卡；版式与原版明显区分。</p>
+            <span class="tag tag--site">推荐挂网 · C-all-optical-city-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-all-optical-city-public.jpg" alt="全光城 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>行业云栈 · AI就绪 · AC-v2</h2>
+            <p>v2 精致版：金条对比图、矿山实拍网格、3D 城市光网底景；已脱敏。</p>
+            <span class="tag tag--site">AC-cloud-stack-ai-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-cloud-stack-ai-web-v2.jpg" alt="云栈 AI AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>行业云栈 · AI就绪 · C-公开版</h2>
+            <p>v2 精致版：中央 3D 云枢纽+侧栏图表+流程带+底栏能力卡；版式与 AC 区分。</p>
+            <span class="tag tag--site">推荐挂网 · C-cloud-stack-ai-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-cloud-stack-ai-public.jpg" alt="云栈 AI C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>行业大模型体系 · AC-v2</h2>
+            <p>L0/L1/L2 玻璃栈+左右对比+圆形训推底座；去除 Pangu/精确步数时长/600+ 等。</p>
+            <span class="tag tag--site">AC-industry-llm-arch-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-industry-llm-arch-web-v2.jpg" alt="行业大模型 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>行业大模型体系 · C-公开版</h2>
+            <p>中央三层平台+侧栏对比+流程带+底栏能力；版式与 AC 区分，精致有细节。</p>
+            <span class="tag tag--site">推荐挂网 · C-industry-llm-arch-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-industry-llm-arch-public.jpg" alt="行业大模型 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>网络测速 · 轻度脱敏</h2>
+            <p>细节增强版：侧栏微数据、多层光环底座、金属顶栏；DEMO / 5.x Gbps。</p>
+            <span class="tag">AC-network-speed-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-network-speed-web-v2.jpg" alt="网络测速轻度脱敏" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>智慧数据中心（大型）· AC-v2</h2>
+            <p>中央剖透视图+三KPI+案例侧栏；去除华为/客户名/精确PUE与TTM。</p>
+            <span class="tag tag--site">AC-smart-dc-large-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-smart-dc-large-web-v2.jpg" alt="智慧DC大型 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>智慧数据中心（大型）· C-公开版</h2>
+            <p>KPI+3D预制机房主视觉+流程+2×2能力卡；版式与 AC 区分。</p>
+            <span class="tag tag--site">推荐挂网 · C-smart-dc-large-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-smart-dc-large-public.jpg" alt="智慧DC大型 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>站点储能 · AC-v2</h2>
+            <p>中央圆柱云管+池化底座；左右安全/并网能力；去除 CloudLi/华为/精确指标。</p>
+            <span class="tag tag--site">AC-site-dess-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-site-dess-web-v2.jpg" alt="站点储能 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>站点储能 · C-公开版</h2>
+            <p>KPI+储能柜主视觉+流程带+2×2能力；版式与 AC 区分，细节丰富。</p>
+            <span class="tag tag--site">推荐挂网 · C-site-dess-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-site-dess-public.jpg" alt="站点储能 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>灵活三维组网 · AC-v2</h2>
+            <p>城市夜景+波束示意+双设备台+三场景面板；去除 5.5G/HAAU/IAB/精确速率指标。</p>
+            <span class="tag tag--site">AC-flexible-3d-network-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-flexible-3d-network-web-v2.jpg" alt="三维组网 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>灵活三维组网 · C-公开版</h2>
+            <p>KPI+城市主视觉+流程+场景卡；版式与 AC 区分，精致有细节。</p>
+            <span class="tag tag--site">推荐挂网 · C-flexible-3d-network-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-flexible-3d-network-public.jpg" alt="三维组网 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>数字能源 · 绿色ICT · AC-v2</h2>
+            <p>产消者三层结构+双技术柱+底部能源生态圆台；去除华为/精确SEE/PUE/GWh。</p>
+            <span class="tag tag--site">AC-digital-power-green-ict-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-digital-power-green-ict-web-v2.jpg" alt="数字能源 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>数字能源 · 绿色ICT · C-公开版</h2>
+            <p>KPI+产消者主视觉+双柱+生态环；版式与 AC 区分，精致有细节。</p>
+            <span class="tag tag--site">推荐挂网 · C-digital-power-green-ict-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-digital-power-green-ict-public.jpg" alt="数字能源 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>训推共池 · AC-v2</h2>
+            <p>浅色精细版；资源区Ⅰ/共享/Ⅱ、阶段示意；无训推/时刻/缩扩容。</p>
+            <span class="tag tag--site">AC-train-infer-pool-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-train-infer-pool-web-v2.jpg" alt="训推共池 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>Resource Orchestration · AC-v2 (EN)</h2>
+            <p>中文版进一步脱敏后的英文稿；浅色 + 机房细节增强。</p>
+            <span class="tag">AC-train-infer-pool-web-v2-en.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-train-infer-pool-web-v2-en.jpg" alt="Train-infer pool AC-v2 English" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>训推共池 · C-公开版</h2>
+            <p>浅色极简；任务条泳道+时段环图；文案与视觉进一步脱敏。</p>
+            <span class="tag tag--site">推荐挂网 · C-train-infer-pool-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-train-infer-pool-public.jpg" alt="训推共池 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>数字生态协同 · AC-v2</h2>
+            <p>四角行业+中央体验中枢+能力底座；脱敏行业名/区域A–F；3D玻璃细节增强。</p>
+            <span class="tag tag--site">AC-internet-ecosystem-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-internet-ecosystem-web-v2.jpg" alt="数字生态 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card">
+          <div class="nda-card-head">
+            <h2>Digital Ecosystem Synergy · AC-v2 (EN)</h2>
+            <p>中文版 AC-v2 英文对照；四角行业+体验中枢版式一致。</p>
+            <span class="tag">AC-internet-ecosystem-web-v2-en.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-internet-ecosystem-web-v2-en.jpg" alt="Digital ecosystem AC-v2 English" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>数字生态协同 · C-公开版</h2>
+            <p>顶栏四行业KPI+左侧01–04流程+中央云枢纽+底2×2能力卡；版式与原版区分。</p>
+            <span class="tag tag--site">推荐挂网 · C-internet-ecosystem-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-internet-ecosystem-public.jpg" alt="数字生态 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>数字零售能力 · AC-v2</h2>
+            <p>浅色人货场四角+中央购物车枢纽+能力/算力底座；无华为/精确指标/真实区域名。</p>
+            <span class="tag tag--site">AC-ecommerce-capability-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-ecommerce-capability-web-v2.jpg" alt="数字零售 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>数字零售能力 · C-公开版</h2>
+            <p>浅色KPI+01–04流程+中央购物车+2×2能力卡；无百分比数值。</p>
+            <span class="tag tag--site">推荐挂网 · C-ecommerce-capability-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-ecommerce-capability-public.jpg" alt="数字零售 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>智能汽车云 · AC-v2</h2>
+            <p>浅色中央车型+云协同中枢+智造/出行/营销三栏+云原生底座；无华为/CodeArts/Petal等。</p>
+            <span class="tag tag--site">AC-automotive-cloud-web-v2.jpg</span>
+          </div>
+          <img src="images/nda-showcase/AC-automotive-cloud-web-v2.jpg" alt="智能汽车云 AC-v2" width="1536" height="1024" loading="lazy" />
+        </article>
+        <article class="nda-card nda-card--site">
+          <div class="nda-card-head">
+            <h2>智能汽车云 · C-公开版</h2>
+            <p>浅色KPI+01–04流程+中央车型+2×2能力卡+全球服务网络；版式与原版区分。</p>
+            <span class="tag tag--site">推荐挂网 · C-automotive-cloud-public.jpg</span>
+          </div>
+          <img src="images/nda-showcase/C-automotive-cloud-public.jpg" alt="智能汽车云 C 公开" width="1536" height="1024" loading="lazy" />
+        </article>
+      </div>
+      <p class="nda-note">
+        <strong>挂网声明（建议写在案例页）：</strong>本项目受保密协议约束；下图均为概念重构示意，非客户交付物，不含真实客户、地域、指标与未公开方案。不构成法律意见；若 NDA 禁止一切对外展示，请以合同为准或取得书面许可。
+      </p>
+    </div>
+  </main>
+</body>
+</html>

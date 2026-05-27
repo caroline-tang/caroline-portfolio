@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html
+  lang="zh-CN"
+  data-theme="editorial"
+  data-title-zh="UI 案例 · 红英"
+  data-title-en="UI case · Caroline"
+>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UI 案例 · 红英</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+SC:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!--
+    图片放在 个人网站/images/。建业+：ui-p1-01.jpg、ui-p1-02.jpg…；中原足球：ui-p2-01.jpg…
+    多一张：复制整段 <figure class="case-gallery-item">…</figure>；每张图须单独闭合 </figure>。
+  -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html"><span data-i18n="logo">Portfolio</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html#work" data-i18n="nav_work">作品</a>
+        <a href="index.html#about" data-i18n="nav_about">关于</a>
+        <a href="index.html#contact" data-i18n="nav_contact">联系</a>
+      </nav>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="pill" data-lang-toggle data-lang-target="zh" aria-pressed="true">中</button>
+          <button type="button" class="pill" data-lang-toggle data-lang-target="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="theme-cycle" id="theme-cycle" aria-label="Cycle visual theme">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span id="theme-cycle-label">Editorial</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="case-main">
+    <article class="case-article">
+      <div class="wrap wrap--prose">
+        <a class="case-back" href="index.html#work" data-i18n="case_back">返回首页</a>
+        <p class="case-kicker">Case 02 · UI</p>
+        <h1 class="case-h1 case-h1--tight" data-i18n="case_ui_h1">UI / Web 案例</h1>
+        <p class="case-page-lead" data-i18n="case_ui_intro">
+          以下两个产品端界面项目，每个项目下可放多张展示图；张数可按需增减。
+        </p>
+
+        <nav class="case-jump" aria-label="本页案例">
+          <span class="case-jump-label" data-i18n="case_ui_toc">跳转：</span>
+          <a href="#ui-p1" data-i18n="case_ui_p1_nav">建业+</a>
+          <a href="#ui-p2" data-i18n="case_ui_p2_nav">中原足球</a>
+        </nav>
+      </div>
+
+      <section id="ui-p1" class="case-block">
+        <div class="wrap wrap--prose">
+          <h2 class="case-block-title" data-i18n="case_ui_p1_h2">建业+ APP</h2>
+          <p class="case-block-lead" data-i18n="case_ui_p1_lead">
+            建业集团旗下综合服务客户端，覆盖业主服务、社区与商城等场景。
+          </p>
+        </div>
+        <div class="case-bleed">
+          <div class="case-gallery">
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-01.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-02.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-03.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-04.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-05.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-06.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-07.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-08.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-09.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p1-10.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_ui_p1_role">界面与组件规范、关键流程高保真、与开发标注对接。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_ui_p1_scope">首页与核心服务动线、会员卡券与订单、消息与个人中心等模块。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_ui_p1_outcome">在保证品牌一致性的前提下提升信息层级与可用性，支持版本迭代交付。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="ui-p2" class="case-block">
+        <div class="wrap wrap--prose">
+          <h2 class="case-block-title" data-i18n="case_ui_p2_h2">中原足球 APP（原建业足球）</h2>
+          <p class="case-block-lead" data-i18n="case_ui_p2_lead">
+            俱乐部官方应用，面向球迷的赛事、票务、内容与会员服务。
+          </p>
+        </div>
+        <div class="case-bleed">
+          <!-- 中原足球图须放在 images/ 下，命名为 ui-p2-01.jpg … ui-p2-04.jpg（与 src 一致），否则会裂图 -->
+          <div class="case-gallery">
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-01.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-02.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-03.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-04.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-05.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-06.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-07.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-08.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-09.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-10.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-11.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/ui-p2-12.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_ui_p2_role">赛事与数据展示、购票/会员动线、活动与内容板块的界面与状态设计。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_ui_p2_scope">赛程比分、球队动态、个人中心与权益等主轴流程。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_ui_p2_outcome">适配赛季运营节奏的输出节奏，与产品、开发协作落地多版本。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <div class="wrap wrap--prose">
+        <p class="case-note" data-i18n="case_ui_note">
+          可补充流程图、关键界面静帧、或外链 Figma 原型（只读）。
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> <span class="footer-name" data-i18n="site_name">红英</span> · <span data-i18n="footer_note"></span></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

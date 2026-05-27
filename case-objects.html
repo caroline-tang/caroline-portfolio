@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html
+  lang="zh-CN"
+  data-theme="editorial"
+  data-title-zh="器物与配饰设计 · 红英"
+  data-title-en="Objects & accessory design · Caroline"
+>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>器物与配饰设计 · 红英</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+SC:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!--
+    图片放进 个人网站/images/：
+    毕业设计 obj-p1-01.jpg 起；丝巾 obj-p2-01…；耳环 obj-p3-01…
+    多一张：复制 <figure class="case-gallery-item">…</figure> 整段，改 src。
+    首页横图：home-card-objects.jpg
+  -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html"><span data-i18n="logo">Portfolio</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html#work" data-i18n="nav_work">作品</a>
+        <a href="index.html#about" data-i18n="nav_about">关于</a>
+        <a href="index.html#contact" data-i18n="nav_contact">联系</a>
+      </nav>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="pill" data-lang-toggle data-lang-target="zh" aria-pressed="true">中</button>
+          <button type="button" class="pill" data-lang-toggle data-lang-target="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="theme-cycle" id="theme-cycle" aria-label="Cycle visual theme">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span id="theme-cycle-label">Editorial</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="case-main">
+    <article class="case-article">
+      <div class="wrap wrap--prose">
+        <a class="case-back" href="index.html#work" data-i18n="case_back">返回首页</a>
+        <p class="case-kicker">Case 06 · Objects</p>
+        <h1 class="case-h1 case-h1--tight" data-i18n="case_objects_h1">器物与配饰设计</h1>
+        <p class="case-page-lead" data-i18n="case_objects_intro">
+          从学院毕业设计到丝巾、耳环等自主物件与配饰实践——侧重造型、图案、材质与实物呈现，而非商业售卖。
+        </p>
+
+        <nav class="case-jump" aria-label="本页案例">
+          <span class="case-jump-label" data-i18n="case_objects_toc">跳转：</span>
+          <a href="#obj-p1" data-i18n="case_objects_p1_nav">毕业设计</a>
+          <a href="#obj-p2" data-i18n="case_objects_p2_nav">丝巾</a>
+          <a href="#obj-p3" data-i18n="case_objects_p3_nav">耳环</a>
+        </nav>
+      </div>
+
+      <section id="obj-p1" class="case-block">
+        <div class="wrap wrap--prose">
+          <h2 class="case-block-title" data-i18n="case_objects_p1_h2">毕业设计 · 陶瓷香炉</h2>
+          <p class="case-block-lead" data-i18n="case_objects_p1_lead">
+            以陶瓷香炉为主体的立体毕业设计：造型、釉色与烧制工艺配合，学院评优为优秀毕业作品。
+          </p>
+        </div>
+        <div class="case-bleed">
+          <div class="case-gallery case-gallery--pairs">
+            <figure class="case-gallery-item">
+              <img
+                src="images/obj-p1-01.jpg"
+                alt=""
+                width="1024"
+                height="694"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="case-gallery-item">
+              <img
+                src="images/obj-p1-02.jpg"
+                alt=""
+                width="1024"
+                height="694"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="case-gallery-item">
+              <img
+                src="images/obj-p1-03.jpg"
+                alt=""
+                width="1024"
+                height="694"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="case-gallery-item">
+              <img
+                src="images/obj-p1-04.jpg"
+                alt=""
+                width="1024"
+                height="694"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_objects_p1_role">概念与造型设计、釉色方案、烧制打样配合、毕业展陈与说明版面。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_objects_p1_scope">器型、表面装饰、实物烧制、展陈摄影与答辩材料。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_objects_p1_outcome">获评优秀毕业作品；完成从草图到实物与展陈的完整交付。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="obj-p2" class="case-block">
+        <div class="wrap wrap--prose">
+          <h2 class="case-block-title" data-i18n="case_objects_p2_h2">丝巾设计</h2>
+          <p class="case-block-lead" data-i18n="case_objects_p2_lead">
+            自主设计项目：图案研发、配色与面料视觉，关注佩戴场景下的平面与材质表达。
+          </p>
+        </div>
+        <div class="case-bleed">
+          <div class="case-gallery case-gallery--pairs">
+            <figure class="case-gallery-item">
+              <img src="images/obj-p2-01.jpg" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/obj-p2-02.jpg" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/obj-p2-03.jpg" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/obj-p2-04.jpg" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_objects_p2_role">图案设计、色彩与构图、打样跟进、实物摄影与呈现。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_objects_p2_scope">方巾 / 长巾图案、面料色样、折叠与佩戴示意。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_objects_p2_outcome">形成可展示的图案与实物样，验证从平面到穿戴物料的落地。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="obj-p3" class="case-block">
+        <div class="wrap wrap--prose">
+          <h2 class="case-block-title" data-i18n="case_objects_p3_h2">耳环设计</h2>
+          <p class="case-block-lead" data-i18n="case_objects_p3_lead">
+            自主设计项目：小型配饰的造型、材质与佩戴比例，强调细节工艺与静物呈现。
+          </p>
+        </div>
+        <div class="case-bleed">
+          <div class="case-gallery case-gallery--pairs">
+            <figure class="case-gallery-item">
+              <img src="images/obj-p3-01.jpg" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/obj-p3-02.jpg" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/obj-p3-03.jpg" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="case-gallery-item">
+              <img src="images/obj-p3-04.jpg" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+        <div class="wrap wrap--prose">
+          <dl class="case-dl case-dl--compact">
+            <div>
+              <dt data-i18n="case_role_label">职责</dt>
+              <dd data-i18n="case_objects_p3_role">造型设计、材质与配色、打样与佩戴摄影。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_scope_label">范围</dt>
+              <dd data-i18n="case_objects_p3_scope">耳饰单体与系列、佩戴示意、静物与细节特写。</dd>
+            </div>
+            <div>
+              <dt data-i18n="case_outcome_label">结果</dt>
+              <dd data-i18n="case_objects_p3_outcome">完成系列样件与展示图，体现小尺度物件的形式控制。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> <span class="footer-name" data-i18n="site_name">红英</span> · <span data-i18n="footer_note"></span></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
