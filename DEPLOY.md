@@ -22,6 +22,29 @@ git push -u origin main
 
 首次 push 约 **480MB** 图片，可能需要 **10–40 分钟**，请保持网络畅通。
 
+### push 报错 `Error in the HTTP2 framing layer`
+
+多为 HTTPS/HTTP2 与网络（代理、VPN、校园网）冲突。在本仓库已配置 `http.version=HTTP/1.1`，请再执行：
+
+```bash
+cd "/Users/tang/Desktop/Tang-07032022/AI/Life/个人网站"
+/usr/bin/git push -u origin main
+```
+
+仍失败可试：
+
+```bash
+# 仅当前仓库：关闭 HTTP/2（若上一步未生效可手动执行）
+/usr/bin/git config http.version HTTP/1.1
+/usr/bin/git config http.postBuffer 524288000
+
+# 或改用 SSH（需在 GitHub 添加 SSH 公钥）
+/usr/bin/git remote set-url origin git@github.com:caroline-tang/caroline-portfolio.git
+/usr/bin/git push -u origin main
+```
+
+推送时尽量关闭 VPN；换手机热点或家里网络再试。
+
 ## 二、连接 Cloudflare Pages
 
 1. 打开 <https://dash.cloudflare.com/> 注册 / 登录  
