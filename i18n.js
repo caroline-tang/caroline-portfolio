@@ -59,7 +59,8 @@ const I18N = {
       "从主视觉与规范到界面与线下物料、展陈与数据大屏，能统筹需求拆解、提案与交付节奏；熟悉与开发、印厂及搭建方的协作。",
     about_p2:
       "接受招聘与项目制合作；若有远程或驻场偏好、可服务周期，可在邮件或简历中一并说明。",
-    resume_link: "下载 PDF 简历（将 PDF 放入本站目录并改名）",
+    resume_link: "下载中文 PDF 简历",
+    resume_href: "resume-zh.pdf",
     skills_title: "技能与工具",
     skill_1: "UI / 产品界面",
     skill_2: "品牌 · VIS · 环境视觉",
@@ -258,7 +259,8 @@ const I18N = {
       "From key visuals and guidelines to UI, print, spatial exhibits, and data screens—structuring briefs, proposals, and delivery with dev, print, and build partners.",
     about_p2:
       "Open to full-time roles and project work; note remote/onsite preferences and availability in your email or résumé.",
-    resume_link: "Download résumé PDF (place file in site folder)",
+    resume_link: "Download résumé (PDF, EN)",
+    resume_href: "resume-en.pdf",
     skills_title: "Skills & tools",
     skill_1: "UI / product",
     skill_2: "Brand · VIS · environmental",
@@ -438,6 +440,12 @@ function applyI18n(lang) {
     const key = el.getAttribute("data-i18n");
     if (key && dict[key] !== undefined) {
       el.textContent = dict[key];
+    }
+  });
+  document.querySelectorAll("[data-i18n-href]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-href");
+    if (key && dict[key] !== undefined) {
+      el.setAttribute("href", dict[key]);
     }
   });
 }
