@@ -415,8 +415,8 @@ const LANG_KEY = "portfolio-lang";
 function getLang() {
   const saved = localStorage.getItem(LANG_KEY);
   if (saved === "en" || saved === "zh") return saved;
-  const nav = navigator.language || "";
-  return nav.toLowerCase().startsWith("zh") ? "zh" : "en";
+  // Default for first visit: English (visitors can switch to 中)
+  return "en";
 }
 
 function setLang(lang) {
